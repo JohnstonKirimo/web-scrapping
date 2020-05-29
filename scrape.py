@@ -2,6 +2,7 @@ import pandas as pd
 import requests
 import json
 import numpy as np
+import os
 
 def replace(x):
     try:
@@ -40,7 +41,7 @@ for month in tables.keys():
         new_tables[month].append(new_df)
         
         name = str(month)+'-'+str(count)+'.xlsx'
-        new_df.to_excel('data\\' + name)
+        new_df.to_excel(os.path.join(os.getcwd(),'data', name))
         print('saved: '+name)
         count += 1
 
