@@ -45,5 +45,5 @@ def flatten(table_name):
     return pd.concat(dfs, axis=0)
     
 ## SPECIFY the file to flatten here ##  
-data = flatten('apr_2012-2.xlsx')
-print(data)
+#data = flatten('apr_2012-2.xlsx')
+#print(data)
